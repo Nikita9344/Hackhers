@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DASHBOARD</title>
+    <meta charset="UTF-8">
+    <meta names="view report" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <script src="typing.js"></script>
+
+    <style>
+        body {
+            /* Desktop - 4 */
+            position: relative;
+            width: 1440px;
+            height: 1024px;
+            background: #DBEAFF;
+            border-radius: 15px;
+        }
+        
+        .dashboard {
+            position: absolute;
+            width: 1440px;
+            height: 860px;
+            left: 0px;
+            top: 163px;
+        }
+        
+        .acadrect {
+            position: absolute;
+            width: 350px;
+            height: 520px;
+            left: 108px;
+            top: 332px;
+            background: #FFFFFF;
+            border-radius: 15px;
+        }
+        
+        .acad {
+            position: absolute;
+            width: 343px;
+            height: 59px;
+            left: 156px;
+            top: 359px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 59px;
+            /* identical to box height */
+            color: #494949;
+        }
+        
+        .lalrect {
+            position: absolute;
+            width: 125px;
+            height: 55px;
+            left: 220px;
+            top: 513px;
+            background: #DBEAFF;
+            border-radius: 5px;
+        }
+        
+        .lal {
+            position: absolute;
+            width: 53px;
+            height: 35px;
+            left: 259px;
+            top: 523px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 35px;
+            color: #000000;
+        }
+        
+        .itprect {
+            position: absolute;
+            width: 125px;
+            height: 55px;
+            left: 218px;
+            top: 592px;
+            background: #DBEAFF;
+            border-radius: 5px;
+        }
+        
+        .itp {
+            position: absolute;
+            width: 45px;
+            height: 35px;
+            left: 259px;
+            top: 602px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 35px;
+            color: #000000;
+        }
+        
+        .feerect {
+            position: absolute;
+            width: 125px;
+            height: 55px;
+            left: 218px;
+            top: 671px;
+            background: #DBEAFF;
+            border-radius: 5px;
+        }
+        
+        .fee {
+            position: absolute;
+            width: 51px;
+            height: 35px;
+            left: 256px;
+            top: 681px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 35px;
+            color: #000000;
+        }
+        
+        .phyrect {
+            position: absolute;
+            width: 125px;
+            height: 55px;
+            left: 218px;
+            top: 750px;
+            background: #DBEAFF;
+            border-radius: 5px;
+        }
+        
+        .phy {
+            position: absolute;
+            width: 58px;
+            height: 35px;
+            left: 255px;
+            top: 760px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 35px;
+            color: #000000;
+        }
+        
+        .techrect {
+            position: absolute;
+            width: 350px;
+            height: 520px;
+            left: 567px;
+            top: 332px;
+            background: #FFFFFF;
+            border-radius: 15px;
+        }
+        
+        .techcom {
+            /* CulturalRect */
+            position: absolute;
+            width: 350px;
+            height: 300px;
+            left: 567px;
+            top: 552px;
+            overflow: auto;
+            background: #FFFFFF;
+            border-radius: 15px;
+        }
+        
+        #Tcom {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 100px;
+            font-size: 30px;
+            word-wrap: break-word;
+            width: 450px;
+        }
+        
+        .tech {
+            /* Technical */
+            position: absolute;
+            width: 218px;
+            height: 59px;
+            left: 627px;
+            top: 358px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 59px;
+            /* identical to box height */
+            color: #494949;
+        }
+        
+        .culrect {
+            /* CulturalRect */
+            position: absolute;
+            width: 350px;
+            height: 520px;
+            left: 1002px;
+            top: 332px;
+            background: #FFFFFF;
+            border-radius: 15px;
+        }
+        
+        .culcom {
+            /* CulturalRect */
+            position: absolute;
+            width: 350px;
+            height: 300px;
+            left: 1002px;
+            top: 552px;
+            overflow: auto;
+            background: #FFFFFF;
+            border-radius: 15px;
+        }
+        
+        #Ccom {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 100px;
+            font-size: 30px;
+            word-wrap: break-word;
+            width: 450px;
+        }
+        
+        .cul {
+            /* Cultural */
+            position: absolute;
+            width: 177px;
+            height: 59px;
+            left: 1088px;
+            top: 359px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 59px;
+            /* identical to box height */
+            color: #494949;
+        }
+        
+        .homerect {
+            /* HomeRect */
+            position: absolute;
+            width: 141px;
+            height: 62px;
+            left: 1042px;
+            top: 52px;
+            background: #000000;
+            border-radius: 10px;
+        }
+        
+        .home {
+            /* Home */
+            position: absolute;
+            width: 81px;
+            height: 35px;
+            left: 1072px;
+            top: 65px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            color: #FFFFFF;
+        }
+        
+        .logoutrect {
+            position: absolute;
+            width: 160px;
+            height: 62px;
+            left: 1250px;
+            top: 52px;
+            background: #000000;
+            border-radius: 10px;
+        }
+        
+        .logout {
+            /* Log Out */
+            position: absolute;
+            width: 106px;
+            height: 35px;
+            left: 1277px;
+            top: 65px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        
+        .group {
+            /* Group 1 */
+            position: absolute;
+            width: 41px;
+            height: 39px;
+            left: 46px;
+            top: 61px;
+        }
+        
+        .sem1 {
+            /* SEM 1 */
+            position: absolute;
+            width: 141px;
+            height: 39px;
+            left: 218px;
+            top: 444px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            color: #000000;
+        }
+        
+        #technical {
+            position: absolute;
+            width: 325px;
+            height: 50px;
+            left: 575px;
+            top: 450px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 100px;
+            font-size: 30px;
+            background: rgba(242, 204, 171, 0.48);
+        }
+        
+        #cultural {
+            position: absolute;
+            width: 315px;
+            height: 50px;
+            left: 1020px;
+            top: 450px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 100px;
+            font-size: 30px;
+            background: rgba(242, 204, 171, 0.48);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dashboard">
+        <img src="images/dashboard 1.png">
+    </div>
+    <div class="iiita"><img src="images/iiita.png"></div>
+    <div class="acadrect"></div>
+    <div class="acad">Academics</div>
+    <a href="LAL.html">
+        <div class="lalrect"></div>
+        <div class="lal">LAL</div>
+    </a>
+    <a href="ITP.html">
+        <div class="itprect"></div>
+        <div class="itp">ITP</div>
+    </a>
+    <a href="FEE.html">
+        <div class="feerect"></div>
+        <div class="fee">FEE</div>
+    </a>
+    <a href="PHY.html">
+        <div class="phyrect"></div>
+        <div class="phy">PHY</div>
+    </a>
+    <div class="techrect"></div>
+    <div class="techcom">
+        <p>
+            <ul>
+                <span id="Tcom"></span>
+            </ul>
+        </p>
+    </div>
+    <input type="text" id="technical" placeholder="Announcements">
+    <div class="tech">Technical</div>
+
+    <div class="culrect"></div>
+    <div class="culcom">
+        <p>
+            <ul>
+                <span id="Ccom"></span>
+            </ul>
+        </p>
+    </div>
+    <input type="text" id="cultural" placeholder="Announcements">
+    <div class="cul">Cultural</div>
+
+    <a href="home.html">
+        <div class="homerect"></div>
+        <div class="home">Home</div>
+        <div class="logoutrect"></div>
+        <div class="logout">Log out</div>
+    </a>
+    <div class="group"></div>
+    <div class="sem1">SEM 1</div>
+
+    <script>
+        function keyPressHandler1(e) {
+            if (e.keyCode == 13) {
+                $('#Tcom').append('<li>' + $('#technical').val() + '</li>');
+                $('#technical').val('');
+            }
+        }
+
+        $('#technical').keyup(keyPressHandler1);
+
+        function keyPressHandler2(e) {
+            if (e.keyCode == 13) {
+                $('#Ccom').append('<li>' + $('#cultural').val() + '</li>');
+                $('#cultural').val('');
+            }
+        }
+
+        $('#cultural').keyup(keyPressHandler2);
+    </script>
+</body>
+
+</html>

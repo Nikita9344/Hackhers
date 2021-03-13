@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LAL</title>
+    <meta charset="UTF-8">
+    <meta names="view report" content="width=device-width, initial-scale=1">
+
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <script src="typing.js"></script>
+    </head>
+    <style>
+        /* LAL 1 */
+        
+        .lal {
+            position: absolute;
+            width: 1440px;
+            height: 860px;
+            left: 0px;
+            top: 169px;
+        }
+        /* HomeRect */
+        
+        .lalRect {
+            position: absolute;
+            width: 1440px;
+            height: 169px;
+            left: 0px;
+            top: 0px;
+            background: rgba(219, 234, 255, 0.7);
+        }
+        /* HomeRect */
+        
+        .dbRect {
+            position: absolute;
+            width: 165px;
+            height: 62px;
+            left: 1236px;
+            top: 52px;
+            background: #000000;
+            border-radius: 10px;
+        }
+        /* Dashboard */
+        
+        .Dashboard {
+            position: absolute;
+            width: 146px;
+            height: 35px;
+            left: 1246px;
+            top: 64px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            color: #FFFFFF;
+        }
+        /* Linear Alegbra (LAL) */
+        
+        .LinearAlegbra {
+            position: absolute;
+            width: 854px;
+            height: 67px;
+            left: 283px;
+            top: 51px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 60px;
+            line-height: 70px;
+            text-align: center;
+            color: #000000;
+        }
+        /* LogoutRect */
+        
+        .AnnouncementComment {
+            position: absolute;
+            width: 464px;
+            height: 666px;
+            left: 71px;
+            top: 300px;
+            overflow: auto;
+            background: rgba(242, 204, 171, 0.5);
+        }
+        /* LogoutRect */
+        
+        .ResourcesComments {
+            position: absolute;
+            width: 464px;
+            height: 666px;
+            left: 890px;
+            top: 300px;
+            overflow: auto;
+            background: rgba(242, 204, 171, 0.5);
+        }
+        /* LogoutRect */
+        
+        #resources {
+            position: absolute;
+            width: 464px;
+            height: 67px;
+            left: 890px;
+            top: 201px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 100px;
+            font-size: 30px;
+            background: rgba(242, 204, 171, 0.48);
+        }
+        /* LogoutRect */
+        
+        #announcement {
+            position: absolute;
+            width: 464px;
+            height: 67px;
+            left: 71px;
+            top: 201px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 100px;
+            font-size: 30px;
+            background: rgba(242, 204, 171, 0.48);
+        }
+        /* Announcements */
+        
+        .AnnouncementText {
+            position: absolute;
+            width: 328px;
+            height: 36px;
+            left: 88px;
+            top: 213px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 35px;
+            /* identical to box height */
+            color: #656565;
+        }
+        /* Resources */
+        
+        .ResourcesText {
+            position: absolute;
+            width: 328px;
+            height: 36px;
+            left: 920px;
+            top: 213px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 35px;
+            /* identical to box height */
+            color: #656565;
+        }
+        
+        #Acomments {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 100px;
+            font-size: 30px;
+        }
+        
+        #Rcomments {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 100px;
+            font-size: 30px;
+            word-wrap: break-word;
+            width: 450px;
+        }
+    </style>
+
+    <body>
+        <div class="lal"><img src="images/LAL 1.png"></div>
+        <div class="lalRect"></div>
+        <div class="dbRect"></div>
+        <a href="dashboard.html">
+            <div class="dbRect"></div>
+        </a>
+        <a href="dashboard.html">
+            <div class="Dashboard">Dashboard</div>
+        </a>
+        <div class="LinearAlegbra">Linear Algebra (LAL)</div>
+        <div class="AnnouncementComment">
+            <p>
+                <ul>
+                    <span id="Acomments"></span>
+                </ul>
+            </p>
+        </div>
+        <div class="ResourcesComments">
+            <p>
+                <ul>
+                    <span id="Rcomments"></span>
+                </ul>
+            </p>
+        </div>
+        <div class="Resources"></div>
+        <div class="Announcement"></div>
+        <!-- <div class="ResourcesText">Resources</div> -->
+        <input type="text" id="resources" placeholder="Resources">
+        <input type="text" id="announcement" placeholder="Announcements">
+        <!-- <div class="AnnouncementText">Announcement</div> -->
+
+
+        <script>
+            function keyPressHandler1(e) {
+                if (e.keyCode == 13) {
+                    $('#Acomments').append('<li>' + $('#announcement').val() + '</li>');
+                    $('#announcement').val('');
+                }
+            }
+
+            $('#announcement').keyup(keyPressHandler1);
+
+            function keyPressHandler2(e) {
+                if (e.keyCode == 13) {
+                    $('#Rcomments').append('<li>' + $('#resources').val() + '</li>');
+                    $('#resources').val('');
+                }
+            }
+
+            $('#resources').keyup(keyPressHandler2);
+        </script>
+    </body>
+
+</html>
