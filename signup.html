@@ -11,19 +11,21 @@
 
     <body>
         <div class="image"><img src="images/campus.png"></div>
-        <div class="bluerec"></div>
-        <div class="rectangle10"></div>
-        <div class="terms">By creating an account, you agree to our Terms and Conditions.</div>
-        <div class="rectangle7"></div>
-        <div class="fullname">Full Name</div>
-        <div class="rectangle11"></div>
-        <div class="enroll">Enrollment Number</div>
-        <div class="rectangle8"></div>
-        <div class="email">Email address</div>
+        <div class="signup">
+            <form>
+                <label for="name" class="input-text">Full Name:</label> <br>
+                <input type="text" class="input-box" placeholder="Full name">
+                <label for="enroll" class="input-text">Enrollment Number:</label> <br>
+                <input type="text" class="input-box" placeholder="Enrollment number">
+                <label for="email" class="input-text">Email Address:</label> <br>
+                <input type="email" class="input-box" placeholder="Email Address">
+                <label for="password" class="input-text">Password:</label> <br>
+                <input type="password" class="input-box" placeholder="Password">
+                <p><input type="checkbox" class="terms">By creating an account, you agree to our Terms and Conditions.</p>
+            </form>
+        </div>
         <div class="rectangle6"></div>
         <div class="register">REGISTER</div>
-        <div class="rectangle9"></div>
-        <div class="password">Password</div>
         <div class="start">Getting Started...</div>
         <div class="account">Create an account to continue</div>
     </body>
@@ -31,19 +33,15 @@
     <style>
         /*image*/
         
-        .image {
-            position: absolute;
-            width: 828px;
-            height: 529px;
-            left: 598px;
-            top: 285px;
+        body {
+            margin: 0;
+            padding: 0;
         }
-        /* blue rectangle */
         
-        .bluerec {
+        .signup {
             position: absolute;
-            width: 579px;
-            height: 1024px;
+            width: 580px;
+            height: 1000px;
             left: 4px;
             top: 0px;
             background: #DBEAFF;
@@ -51,106 +49,44 @@
             box-sizing: border-box;
             border-radius: 15px;
         }
-        /* Rectangle 10 */
         
-        .rectangle10 {
+        .input-box {
+            position: relative;
+            top: 200px;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px 50px 50px;
+            width: 75%;
+            border: 1px solid #999;
+            outline: none;
+            justify-content: center;
+        }
+        
+        .input-text {
+            position: relative;
+            top: 200px;
+            padding: 10px;
+            margin: 10px 50px;
+            width: 75%;
+            justify-content: center;
+        }
+        
+        .image {
             position: absolute;
-            width: 25px;
-            height: 25px;
-            left: 89px;
-            top: 697px;
-            background: #FFFFFF;
-            border-radius: 5px;
+            width: 828px;
+            height: 529px;
+            left: 598px;
+            top: 200px;
         }
         
         .terms {
             position: absolute;
             width: 404px;
             height: 22px;
-            left: 133px;
-            top: 703px;
+            top: 700px;
+            left: 5px;
             font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
             font-size: 14px;
-            line-height: 16px;
-            color: #000000;
-        }
-        /* Rectangle 7 */
-        
-        .rectangle7 {
-            position: absolute;
-            width: 310px;
-            height: 34px;
-            left: 89px;
-            top: 268px;
-            background: #FFFFFF;
-            border-radius: 15px;
-        }
-        
-        .fullname {
-            position: absolute;
-            width: 248px;
-            height: 32px;
-            left: 89px;
-            top: 236px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 28px;
-            color: #000000;
-        }
-        /* Rectangle 11 */
-        
-        .rectangle11 {
-            position: absolute;
-            width: 310px;
-            height: 34px;
-            left: 89px;
-            top: 368px;
-            background: #FFFFFF;
-            border-radius: 15px;
-        }
-        /* Enrollment number */
-        
-        .enroll {
-            position: absolute;
-            width: 248px;
-            height: 32px;
-            left: 89px;
-            top: 336px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 28px;
-            color: #000000;
-        }
-        /* Rectangle 8 */
-        
-        .rectangle8 {
-            position: absolute;
-            width: 310px;
-            height: 34px;
-            left: 89px;
-            top: 465px;
-            background: #FFFFFF;
-            border-radius: 15px;
-        }
-        /* Email address */
-        
-        .email {
-            position: absolute;
-            width: 248px;
-            height: 32px;
-            left: 89px;
-            top: 434px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 28px;
             color: #000000;
         }
         /* Rectangle 6 */
@@ -180,32 +116,6 @@
             font-size: 22px;
             line-height: 26px;
             color: #FFFFFF;
-        }
-        /* Rectangle 9 */
-        
-        .rectangle9 {
-            position: absolute;
-            width: 310px;
-            height: 34px;
-            left: 89px;
-            top: 560px;
-            background: #FFFFFF;
-            border-radius: 15px;
-        }
-        /* Password */
-        
-        .password {
-            position: absolute;
-            width: 248px;
-            height: 32px;
-            left: 89px;
-            top: 528px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 28px;
-            color: #000000;
         }
         /* Getting Started... */
         
