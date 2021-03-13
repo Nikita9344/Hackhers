@@ -1,319 +1,332 @@
 <!DOCTYPE html>
 <html>
- 
+
 <head>
     <title>KAAYDE KI BAAT</title>
     <meta charset="UTF-8">
     <meta names="view report" content="width=device-width, initial-scale=1">
- 
-    <head>
-        <link rel="stylesheet" href="./style.css">
-        <style>
-            body {
-                /* Desktop - 2 */
-                position: absolute;
-                width: 1440px;
-                height: 1024px;
-                background: white;
-            }
-            /* Rectangle 1 */
-            
-            .rectangle1 {
-                position: absolute;
-                width: 1360px;
-                height: 934px;
-                left: 40px;
-                top: 45px;
-                background: #FFFFFF;
-                border-radius: 15px;
-            }
-            /* girls image */
-            
-            .iiita {
-                /* iiita */
-                position: absolute;
-                width: 130px;
-                height: 126px;
-                left: 76px;
-                top: 72px;
-            }
-            
-            .girls {
-                position: absolute;
-                width: 717px;
-                height: 492px;
-                left: 666px;
-                top: 293px;
-            }
-            
-            .kaayde {
-                position: absolute;
-                width: 899px;
-                height: 138px;
-                left: 88px;
-                top: 231px;
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: 900;
-                font-size: 85px;
-                line-height: 100px;
-                color: #000000;
-            }
-            
-            .signup {
-                /* Rectangle 2 */
-                position: absolute;
-                width: 138px;
-                height: 66px;
-                left: 1215px;
-                top: 93px;
-                background: #000000;
-                border-radius: 10px;
-                /* Sign Up */
-            }
-            
-            .signuptext {
-                position: absolute;
-                width: 107px;
-                height: 30px;
-                left: 1239px;
-                top: 111px;
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 28px;
-                color: #FFFFFF;
-            }
-            /* About Us */
-            
-            .aboutus {
-                position: absolute;
-                width: 154px;
-                height: 41px;
-                left: 920px;
-                top: 108px;
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 30px;
-                line-height: 35px;
-                color: #000000;
-            }
-            /* Help */
-            
-            .help {
-                position: absolute;
-                width: 83px;
-                height: 53px;
-                left: 1103px;
-                top: 106px;
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 30px;
-                line-height: 35px;
-                color: #000000;
-            }
-            /* Group 8 */
-            
-            .group8 {
-                position: absolute;
-                width: 145px;
-                height: 60px;
-                left: 76px;
-                top: 794px;
-            }
-            /* Rectangle 3 */
-            
-            .rectangle3 {
-                position: absolute;
-                width: 333px;
-                height: 60px;
-                left: 261px;
-                top: 571px;
-                background: #eaf3fa;
-                border-radius: 10px;
-            }
-            
-            .username {
-                /* Rectangle 2 */
-                position: absolute;
-                width: 138.28px;
-                height: 60px;
-                left: 76px;
-                top: 571px;
-                background: #FA9746;
-                border-radius: 10px;
-            }
-            
-            .usernametext {
-                /* Username */
-                position: absolute;
-                width: 132.52px;
-                height: 41.47px;
-                left: 88.48px;
-                top: 587.76px;
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 28px;
-                color: #FFFFFF;
-            }
-            /* Rectangle 4 */
-            
-            .rectangle4 {
-                position: absolute;
-                width: 333px;
-                height: 60px;
-                left: 261px;
-                top: 657px;
-                background: #EAF3FA;
-                border-radius: 10px;
-            }
-            
-            .password {
-                /* Rectangle 2 */
-                position: absolute;
-                width: 138.28px;
-                height: 60px;
-                left: 76px;
-                top: 657px;
-                background: #FA9746;
-                border-radius: 10px;
-            }
-            
-            .passwordtext {
-                /* Password */
-                position: absolute;
-                width: 132.52px;
-                height: 41.47px;
-                left: 88.48px;
-                top: 673.76px;
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 28px;
-                color: #FFFFFF;
-            }
-            
-            .login {
-                /* Rectangle 2 */
-                position: absolute;
-                width: 141.91px;
-                height: 60px;
-                left: 76px;
-                top: 794px;
-                background: #000000;
-                border-radius: 10px;
-            }
-            
-            .logintext {
-                /* Sign In */
-                position: absolute;
-                width: 110.04px;
-                height: 27.27px;
-                left: 110.96px;
-                top: 810.36px;
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 28px;
-                color: #FFFFFF;
-            }
-            
-            .text {
-                position: absolute;
-                width: 570px;
-                height: 124px;
-                left: 88px;
-                top: 395px;
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 24px;
-                line-height: 37px;
-                /* or 154% */
-                color: #090909;
-            }
-            
-            .apk {
-                /* apk */
-                position: absolute;
-                width: 76px;
-                height: 71px;
-                left: 874px;
-                top: 864px;
-            }
-            
-            .effe {
-                /* effe */
-                position: absolute;
-                width: 75px;
-                height: 67px;
-                left: 967.9px;
-                top: 869px;
-            }
-            
-            .iiic {
-                /* iiic */
-                position: absolute;
-                width: 69px;
-                height: 78px;
-                left: 1068.9px;
-                top: 864px;
-            }
-            
-            .sarasva {
-                /* sarasva */
-                position: absolute;
-                width: 83px;
-                height: 74px;
-                left: 1163.9px;
-                top: 864px;
-            }
-            
-            .ams {
-                /* ams */
-                position: absolute;
-                width: 83px;
-                height: 78px;
-                left: 1264.9px;
-                top: 864px;
-            }
-        </style>
-    </head>
- 
-    <body>
-        <div class="rectangle 1">
-            <div class="girls">
-                <img src="./images/girlsimage.png ">
-            </div>
-            <div class="iiita"><img src="images/iiita.png"></div>
-            <div class="kaayde">Kaayde Ki Baat Only</div>
-            <div class="signup"></div>
-            <div class="signuptext">Sign up</div>
-            <div class="aboutus">About us</div>
-            <div class="help">Help</div>
-            <div class="group8"></div>
-            <div class="rectangle3"></div>
-            <div class="username"></div>
-            <div class="usernametext">Username</div>
-            <div class="rectangle4"></div>
-            <div class="password"></div>
-            <div class="passwordtext">Password</div>
-            <div class="login"></div>
-            <div class="logintext">Log In</div>
-            <div class="text">A hub for all the information regarding classes, important events that are usually conveyed to first year students by the CRs of the respective sections.</div>
-            <div class="apk"><img src="images/apk.png"></div>
-            <div class="effe"><img src="images/effe.png"></div>
-            <div class="iiic"><img src="images/iiic.png"></div>
-            <div class="sarasva"><img src="images/sarasva.png"></div>
-            <div class="ams"><img src="images/ams.png"></div>
+
+
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            /* Desktop - 2 */
+            position: absolute;
+            width: 1440px;
+            height: 1024px;
+            background: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .input-box {
+            position: relative;
+            width: 333px;
+            height: 60px;
+            left: 261px;
+            top: 550px;
+            background: #eaf3fa;
+            border-radius: 10px;
+        }
+        
+        .input-text {
+            position: relative;
+            top: 200px;
+            padding: 10px;
+            margin: 10px 50px;
+            width: 75%;
+            justify-content: center;
+        }
+        /* Rectangle 1 */
+        
+        .rectangle1 {
+            position: absolute;
+            width: 1360px;
+            height: 934px;
+            left: 40px;
+            top: 45px;
+            background: #FFFFFF;
+            border-radius: 15px;
+        }
+        
+        .iiita {
+            /* iiita */
+            position: absolute;
+            width: 130px;
+            height: 126px;
+            left: 76px;
+            top: 72px;
+        }
+        
+        .girls {
+            position: absolute;
+            width: 717px;
+            height: 492px;
+            left: 666px;
+            top: 293px;
+        }
+        
+        .kaayde {
+            position: absolute;
+            width: 899px;
+            height: 138px;
+            left: 88px;
+            top: 231px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 85px;
+            line-height: 100px;
+            color: #000000;
+        }
+        
+        .signup {
+            /* Rectangle 2 */
+            position: absolute;
+            width: 138px;
+            height: 66px;
+            left: 1215px;
+            top: 93px;
+            background: #000000;
+            border-radius: 10px;
+            /* Sign Up */
+        }
+        
+        .signuptext {
+            position: absolute;
+            width: 107px;
+            height: 30px;
+            left: 1239px;
+            top: 111px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+        /* About Us */
+        
+        .aboutus {
+            position: absolute;
+            width: 154px;
+            height: 41px;
+            left: 920px;
+            top: 108px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            color: #000000;
+        }
+        /* Help */
+        
+        .help {
+            position: absolute;
+            width: 83px;
+            height: 53px;
+            left: 1103px;
+            top: 106px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            color: #000000;
+        }
+        /* Group 8 */
+        
+        .group8 {
+            position: absolute;
+            width: 145px;
+            height: 60px;
+            left: 76px;
+            top: 794px;
+        }
+        
+        .username {
+            /* Rectangle 2 */
+            position: absolute;
+            width: 138.28px;
+            height: 60px;
+            left: 76px;
+            top: 571px;
+            background: #FA9746;
+            border-radius: 10px;
+        }
+        
+        .usernametext {
+            /* Username */
+            position: absolute;
+            width: 132.52px;
+            height: 41.47px;
+            left: 88.48px;
+            top: 587.76px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+        
+        .password {
+            /* Rectangle 2 */
+            position: absolute;
+            width: 138.28px;
+            height: 60px;
+            left: 76px;
+            top: 657px;
+            background: #FA9746;
+            border-radius: 10px;
+        }
+        
+        .passwordtext {
+            /* Password */
+            position: absolute;
+            width: 132.52px;
+            height: 41.47px;
+            left: 88.48px;
+            top: 673.76px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+        
+        .login {
+            /* Rectangle 2 */
+            position: absolute;
+            width: 141.91px;
+            height: 60px;
+            left: 76px;
+            top: 794px;
+            background: #000000;
+            border-radius: 10px;
+        }
+        
+        .logintext {
+            /* Sign In */
+            position: absolute;
+            width: 110.04px;
+            height: 27.27px;
+            left: 110.96px;
+            top: 810.36px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+        
+        .text {
+            position: absolute;
+            width: 570px;
+            height: 124px;
+            left: 88px;
+            top: 395px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 37px;
+            /* or 154% */
+            color: #090909;
+        }
+        
+        .apk {
+            /* apk */
+            position: absolute;
+            width: 76px;
+            height: 71px;
+            left: 874px;
+            top: 864px;
+        }
+        
+        .effe {
+            /* effe */
+            position: absolute;
+            width: 75px;
+            height: 67px;
+            left: 967.9px;
+            top: 869px;
+        }
+        
+        .iiic {
+            /* iiic */
+            position: absolute;
+            width: 69px;
+            height: 78px;
+            left: 1068.9px;
+            top: 864px;
+        }
+        
+        .sarasva {
+            /* sarasva */
+            position: absolute;
+            width: 83px;
+            height: 74px;
+            left: 1163.9px;
+            top: 864px;
+        }
+        
+        .ams {
+            /* ams */
+            position: absolute;
+            width: 83px;
+            height: 78px;
+            left: 1264.9px;
+            top: 864px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rectangle 1">
+        <div class="girls">
+            <img src="./images/girlsimage.png ">
         </div>
-    </body>
- 
+        <div class="iiita"><img src="images/iiita.png"></div>
+        <div class="kaayde">Kaayde Ki Baat Only</div>
+        <a href="signup.html"> <button> <div class="signup"></div></button></a>
+        <a href="signup.html">
+            <div class="signuptext">Sign up</div>
+        </a>
+        <a href="aboutus.html">
+            <div class="aboutus">About us</div>
+        </a>
+        <a href="help.html">
+            <div class="help">Help</div>
+        </a>
+        <div class="group8"></div>
+        <div class="rectangle3"></div>
+        <div class="username"></div>
+        <form>
+
+            <input type="email" class="input-box">
+            <br>
+            <br>
+
+            <input type="password" class="input-box">
+        </form>
+        <div class="usernametext">Username</div>
+        <div class="rectangle4"></div>
+        <div class="password"></div>
+        <div class="passwordtext">Password</div>
+        <a href="dashboard.html"> <button> <div class="login"></div></button>
+            <div class="logintext">Log In</div>
+        </a>
+        <div class="text">A hub for all the information regarding classes, important events that are usually conveyed to first year students by the CRs of the respective sections.</div>
+        <div class="apk"><img src="images/apk.png"></div>
+        <div class="effe"><img src="images/effe.png"></div>
+        <div class="iiic"><img src="images/iiic.png"></div>
+        <div class="sarasva"><img src="images/sarasva.png"></div>
+        <div class="ams"><img src="images/ams.png"></div>
+    </div>
+</body>
+
 </html>
