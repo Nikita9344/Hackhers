@@ -1,35 +1,10 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>SIGN UP</title>
     <meta charset="UTF-8">
     <meta names="view report" content="width=device-width, initial-scale=1">
-
-    <head>
-        <link rel="stylesheet" href="./style.css">></head>
-
-    <body>
-        <div class="image"><img src="images/campus.png"></div>
-        <div class="signup">
-            <form>
-                <label for="name" class="input-text">Full Name:</label> <br>
-                <input type="text" class="input-box" placeholder="Full name">
-                <label for="enroll" class="input-text">Enrollment Number:</label> <br>
-                <input type="text" class="input-box" placeholder="Enrollment number">
-                <label for="email" class="input-text">Email Address:</label> <br>
-                <input type="email" class="input-box" placeholder="Email Address">
-                <label for="password" class="input-text">Password:</label> <br>
-                <input type="password" class="input-box" placeholder="Password">
-                <p><input type="checkbox" class="terms">By creating an account, you agree to our Terms and Conditions.</p>
-            </form>
-        </div>
-        <div class="rectangle6"></div>
-        <div class="register">REGISTER</div>
-        <div class="start">Getting Started...</div>
-        <div class="account">Create an account to continue</div>
-    </body>
-
+    <link rel="stylesheet" href="./style.css">
     <style>
         /*image*/
         
@@ -40,8 +15,8 @@
         
         .signup {
             position: absolute;
-            width: 580px;
-            height: 1000px;
+            width: 579px;
+            height: 1024px;
             left: 4px;
             top: 0px;
             background: #DBEAFF;
@@ -76,7 +51,7 @@
             width: 828px;
             height: 529px;
             left: 598px;
-            top: 200px;
+            top: 285px;
         }
         
         .terms {
@@ -84,9 +59,63 @@
             width: 404px;
             height: 22px;
             top: 700px;
-            left: 5px;
+            left: 2px;
             font-family: Roboto;
             font-size: 14px;
+            color: #000000;
+        }
+        
+        .t_c {
+            position: absolute;
+            width: 404px;
+            height: 30px;
+            top: 710px;
+            left: 230px;
+            font-family: Roboto;
+            font-size: 14px;
+            color: #000000;
+        }
+        
+        .fullname {
+            position: absolute;
+            width: 248px;
+            height: 32px;
+            left: 89px;
+            top: 236px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 28px;
+            color: #000000;
+        }
+        /* Enrollment number */
+        
+        .enroll {
+            position: absolute;
+            width: 248px;
+            height: 32px;
+            left: 89px;
+            top: 336px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 28px;
+            color: #000000;
+        }
+        
+        .email {
+            position: absolute;
+            width: 248px;
+            height: 32px;
+            left: 89px;
+            top: 434px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 28px;
             color: #000000;
         }
         /* Rectangle 6 */
@@ -148,5 +177,33 @@
             color: #A5A6B2;
         }
     </style>
+    </head>
+
+    <body>
+        <div class="image"><img src="images/campus.png"></div>
+        <div class="signup">
+            <form>
+                <label for="name" class="input-text">Full Name:</label> <br>
+                <input type="text" class="input-box" placeholder="Full name">
+                <label for="enroll" class="input-text">Enrollment Number:</label> <br>
+                <input type="text" class="input-box" placeholder="Enrollment number">
+                <label for="email" class="input-text">Email Address:</label> <br>
+                <input type="email" class="input-box" placeholder="Email Address">
+                <label for="password" class="input-text">Password:</label> <br>
+                <input type="password" class="input-box" placeholder="Password">
+                <input type="checkbox" class="terms">
+            </form>
+        </div>
+
+        <a href="dashboard.html">
+            <div class="rectangle6"></div>
+        </a>
+        <div class="start">Getting Started...</div>
+        <a href="dashboard.html">
+            <div class="register">REGISTER</div>
+        </a>
+        <div class="account">Create an account to continue</div>
+        <div class="t_c">Agree to Terms and Conditions
+    </body>
 
 </html>
