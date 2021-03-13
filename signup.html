@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>SIGN UP</title>
     <meta charset="UTF-8">
     <meta names="view report" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+
+
+    <script src="signup.js"></script>
+
+
     <style>
         /*image*/
         
         body {
             margin: 0;
             padding: 0;
+        }
+        
+        .logo {
+            /* image 2 */
+            position: absolute;
+            width: 138.39px;
+            height: 130px;
+            left: 1254px;
+            top: 24px;
+            border-radius: 60px;
         }
         
         .signup {
@@ -120,7 +142,7 @@
         }
         /* Rectangle 6 */
         
-        .rectangle6 {
+        .btn {
             position: absolute;
             width: 354px;
             height: 57px;
@@ -130,15 +152,6 @@
             border: 1px solid #000000;
             box-sizing: border-box;
             border-radius: 10px;
-        }
-        /* REGISTER */
-        
-        .register {
-            position: absolute;
-            width: 120.73px;
-            height: 24.28px;
-            left: 205.64px;
-            top: 778.83px;
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
@@ -146,6 +159,16 @@
             line-height: 26px;
             color: #FFFFFF;
         }
+        /* REGISTER 
+        
+        .register {
+            position: absolute;
+            width: 120.73px;
+            height: 24.28px;
+            left: 205.64px;
+            top: 778.83px;
+ 
+        }*/
         /* Getting Started... */
         
         .start {
@@ -177,33 +200,35 @@
             color: #A5A6B2;
         }
     </style>
-    </head>
+</head>
 
-    <body>
-        <div class="image"><img src="images/campus.png"></div>
-        <div class="signup">
-            <form>
-                <label for="name" class="input-text">Full Name:</label> <br>
-                <input type="text" class="input-box" placeholder="Full name">
-                <label for="enroll" class="input-text">Enrollment Number:</label> <br>
-                <input type="text" class="input-box" placeholder="Enrollment number">
-                <label for="email" class="input-text">Email Address:</label> <br>
-                <input type="email" class="input-box" placeholder="Email Address">
-                <label for="password" class="input-text">Password:</label> <br>
-                <input type="password" class="input-box" placeholder="Password">
-                <input type="checkbox" class="terms">
-            </form>
-        </div>
+<body>
+    <div class="image"><img src="images/campus.png"></div>
+    <a href="home.html">
+        <div class="logo"><img src="images/logo.png"></div>
+    </a>
+    <div class="signup">
+        <form>
+            <label for="name" class="input-text">Full Name:</label> <br>
+            <input type="text" class="input-box" placeholder="Full name">
 
-        <a href="dashboard.html">
-            <div class="rectangle6"></div>
-        </a>
-        <div class="start">Getting Started...</div>
-        <a href="dashboard.html">
-            <div class="register">REGISTER</div>
-        </a>
-        <div class="account">Create an account to continue</div>
-        <div class="t_c">Agree to Terms and Conditions
-    </body>
+            <label for="enroll" class="input-text">Enrollment Number:</label> <br>
+            <input type="text" class="input-box" placeholder="Enrollment number">
+
+            <label for="email" class="input-text" id="email">Email Address:</label> <br>
+            <input type="email" class="input-box" placeholder="Email Address" id="email">
+
+            <label for="password" class="input-text" id="password">Password:</label> <br>
+            <input type="password" class="input-box" placeholder="Password" id="password">
+
+            <input type="checkbox" class="terms">
+            <button onclick="register()" class="btn" id="register">REGISTER</button>
+        </form>
+    </div>
+    <div class="start">Getting Started...</div>
+    <div class="account">Create an account to continue</div>
+    <div class="t_c">Agree to Terms and Conditions</div>
+
+</body>
 
 </html>
